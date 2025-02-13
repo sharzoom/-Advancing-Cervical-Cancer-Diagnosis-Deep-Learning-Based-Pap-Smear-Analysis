@@ -2,6 +2,7 @@
 This project aims to enhance cervical cancer diagnosis through deep learning-based analysis of Pap smear images. Cervical cancer, the fourth most common cancer among women, is treatable if detected early. This study utilizes the SIPaKMeD Database, which includes 966 Pap smear cell images categorized as precancerous or normal, to develop a tool that aids doctors in early detection through routine screenings. The project employs a ResNet50-Transformer model, which combines the powerful feature extraction capabilities of a pre-trained ResNet50 convolutional neural network with the attention mechanism of Transformer layers. Data preprocessing involves normalization, standardization, and augmentation techniques to increase training diversity.The model achieves a training accuracy of 96.8%, validation accuracy of 94.3%. This demonstrates its potential to transform cervical cancer screening by reducing reliance on manual processes and improving early detection.
 
 ABSTRACT
+
 Cervical cancer is a widespread health issue that impacts women around the
 world. It typically arises after a prolonged period during which precancerous alterations
 occur within the cervical tissue. Early detection and timely intervention are
@@ -23,6 +24,7 @@ prognosis in cervical cancer cases.
 
 
 1 INTRODUCTION
+
 Cervical cancer ranks as the fourth most common cancer in women worldwide, presenting a significant
 global health challenge with profound implications for women’s well-being WHO (2024).
 Detecting cervical cancer early is crucial, as it progresses slowly from precancerous changes in cervical
@@ -184,6 +186,7 @@ effective classification.
 
 
 5 EXPERIMENTS
+
 The below block diagram outlines the procedural pipeline for implementing the process.
 4
 
