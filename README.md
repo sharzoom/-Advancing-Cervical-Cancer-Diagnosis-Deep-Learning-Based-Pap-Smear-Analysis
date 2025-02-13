@@ -58,6 +58,7 @@ screening and diagnosis, ultimately reducing the global burden of this disease o
 
 
 2 BACKGROUND
+
 In traditional medical practice, the interpretation of Pap smear images, used for cervical cancer
 screening, has been heavily reliant on manual examination by healthcare professionals. However,
 this approach has inherent limitations. Firstly, the interpretation can be subjective, as different professionals
@@ -89,6 +90,7 @@ contributing to improved patient care and outcomes in the field of oncology.
 
 
 3 RELATED WORK
+
 Artificial intelligence and deep learning are crucial in categorizing cells, analyzing medical images,
 and aiding in clinical diagnosis within gynecology Wang et al. (2020). As these technologies
 advance, they become more cost-effective and time-efficient compared to traditional methods like
@@ -133,6 +135,7 @@ field
 
 
 4 METHODOLOGY
+
 The primary objective of this research is to explore the potential of advanced models such as
 ResNet50 and transformer architectures to develop a highly efficient model for accurately predicting
 the cancerous nature of cervical cells. Traditional cervical cancer screening methods, while effective,
@@ -191,7 +194,9 @@ The below block diagram outlines the procedural pipeline for implementing the pr
 4
 
 Figure 2: Methodology
+
 5.1 DATASET
+
 This study will be using the SIP Database which is openly accessible and encompasses close to
 10,000 isolated cell images extracted from pap-smear samples . These images were captured using
 a CCD camera integrated with an optical microscope. Compared to many other datasets utilised in
@@ -213,7 +218,9 @@ or small squamous cells with distinct cellular borders and vacuoles, are linked 
 rates of pre-cancerous lesions in Pap tests. This dataset offers valuable insights into cervical cell
 morphology, aiding in the identification and classification of both normal and abnormal cells in Pap
 smears.
+
 5.2 DATA PRE-PROCESSING
+
 Before training the model for cervical cancer detection using Pap smear images, it’s crucial to preprocess
 the dataset and split it appropriately. The dataset was divided into three sets: 70% for
 training, 15% for validation, and 15% for testing, ensuring a balanced distribution of samples across
@@ -230,7 +237,9 @@ were employed to increase the diversity of the training dataset, enhancing the m
 generalize. It’s essential to maintain a balanced distribution of samples across classes in each set
 to avoid bias, thereby ensuring the model’s effectiveness in detecting both normal and abnormal
 cervical cells.
+
 5.3 TRAINING & VALIDATION OF THE MODEL
+
 The process of training and validating the proposed model for cervical cancer cell classification involves
 several crucial steps aimed at optimizing performance and ensuring generalization to unseen
 data. Initially, during the forward pass, input images traverse through the ResNet50-Transformer
@@ -250,7 +259,9 @@ these iterative steps, researchers can develop and refine models adept at classi
 cancer cells in Pap smear images, thereby advancing early detection efforts and enhancing patient
 outcomes. Additionally, saving the model’s state dictionary at each epoch ensures reproducibility
 and facilitates model comparison and optimization.
+
 5.4 FINE-TUNING AND OPTIMIZATION
+
 Fine-tuning and optimization are pivotal for maximizing the performance of the cervical cancer cell
 classification model. Delving into hyper parameters like learning rate, batch size, and optimizer
 selection is crucial as they profoundly impact the model’s convergence rate, stability, and overall
@@ -268,7 +279,9 @@ as they ensure effective learning, generalization to unseen data, and prevention
 By refining the model’s architecture and hyper parameters, researchers can develop a robust system
 adept at accurately classifying cervical cell abnormalities, thus contributing to early detection efforts
 and improving patient outcomes in cervical cancer diagnosis.
+
 5.5 TESTING THE DATA ON TEST DATASET
+
 Once the model has undergone training and validation, it is essential to evaluate its performance on
 unseen data, which is typically done using a separate test dataset. This evaluation involves computing
 various performance metrics such as accuracy, precision, recall and F1-score. These metrics
@@ -285,6 +298,7 @@ further improvements or adjustments.
 
 
 6 RESULTS
+
 Figure 4: Model Accuracy Comparison
 The ResNet50-Transformer model presents a compelling solution for cervical cancer diagnosis, as
 evidenced by its impressive performance metrics and robustness across various evaluation criteria.
@@ -309,10 +323,7 @@ Intermediate classes are near flawless, highlighting the model’s proficiency i
 cellular anomalies crucial for diagnostic purposes.
 Overall, the ResNet50-Transformer model showcases strong performance across all evaluated metrics
 and classes, with exceptional accuracy observed in certain categories. Despite minor confusion
-between certain classes, its impact remains minimal on overall performance, underscoring the
-7
-
-Figure 6: Confusion Matrix of test data
+between certain classes, its impact remains minimal on overall performance, underscoring the Figure 6: Confusion Matrix of test data
 model’s robustness for classifying cellular anomalies accurately. This robust performance makes it
 a suitable candidate for practical applications where precise identification of these anomalies is imperative,
 thereby contributing to advancements in healthcare diagnostics and ultimately improving
@@ -320,6 +331,7 @@ patient outcomes.
 
 
 7 DISCUSSION
+
 The model’s performance demonstrates its efficacy in cervical cancer cell classification, achieving
 a commendable accuracy of 91% on the test dataset. Furthermore, the low loss value indicates the
 model’s ability to minimize prediction errors effectively. The negligible difference between validation
@@ -335,6 +347,7 @@ accessible and scalable for practical uses, it is necessary to maximize computin
 
 
 8 LIMITATIONS
+
 The ResNet50-Transformer model for cervical cancer diagnosis presents promising advancements
 in healthcare, yet several limitations must be addressed to maximize its impact. Foremost among
 these is the challenge of prolonged inference time, which could impede its real-time applicability
@@ -352,11 +365,9 @@ management strategies.
 
 
 9 FUTURE WORK & SIGNIFICANCE
-Early detection of cervical cancer greatly increases the likelihood of successful treatment and improved
-survival rates, underscoring the critical importance of reliable diagnostic tools in combating
-8
 
-this disease.However, the deployment of the ResNet50-Transformer model for cervical cancer diagnosis
+Early detection of cervical cancer greatly increases the likelihood of successful treatment and improved
+survival rates, underscoring the critical importance of reliable diagnostic tools in combating this disease.However, the deployment of the ResNet50-Transformer model for cervical cancer diagnosis
 is not without its challenges. One notable obstacle encountered during model execution is the
 prolonged inference time, which can impede real-time diagnosis and workflow efficiency. Addressing
 this challenge is paramount to the practical implementation of the model in clinical settings.
