@@ -53,6 +53,8 @@ ViT models to accurately classify cervical cells as benign or malignant, facilit
 cervical cancer at the cellular level. By providing an overview of recent advancements, challenges,
 and future directions, this study aims to contribute to ongoing efforts to enhance cervical cancer
 screening and diagnosis, ultimately reducing the global burden of this disease on women’s health.
+
+
 2 BACKGROUND
 In traditional medical practice, the interpretation of Pap smear images, used for cervical cancer
 screening, has been heavily reliant on manual examination by healthcare professionals. However,
@@ -82,6 +84,8 @@ process, reduce human error, and ultimately improve patient outcomes through ear
 intervention. In conclusion, this project aims to develop a robust and reliable system that can assist
 healthcare professionals in accurately identifying cervical abnormalities associated with cancer,
 contributing to improved patient care and outcomes in the field of oncology.
+
+
 3 RELATED WORK
 Artificial intelligence and deep learning are crucial in categorizing cells, analyzing medical images,
 and aiding in clinical diagnosis within gynecology Wang et al. (2020). As these technologies
@@ -93,7 +97,6 @@ patient care. Attallah (2023) introduced ”CerCan·Net,” a sophisticated comp
 system specifically tailored for automatic cervical cancer diagnosis. By leveraging lightweight convolutional
 neural networks such as MobileNet, DarkNet-19, and ResNet-18, coupled with transfer
 learning techniques, CerCan·Net adeptly extracts deep features from diverse layers. Through metic-
-
 ulous feature selection processes, it achieves heightened accuracy in categorizing cervical cancer
 subtypes, thus promising substantial support to cytopathologists in enhancing diagnostic precision
 and workflow efficiency.
@@ -125,6 +128,8 @@ high follow-up rates and maintaining sensitivity levels in cytology screening.Co
 studies underscore the transformative potential of AI and deep learning in cervical cancer diagnosis
 and management, offering insights into innovative techniques, challenges, and opportunities in the
 field
+
+
 4 METHODOLOGY
 The primary objective of this research is to explore the potential of advanced models such as
 ResNet50 and transformer architectures to develop a highly efficient model for accurately predicting
@@ -148,9 +153,6 @@ composed of a fully connected layer followed by a softmax layer for class predic
 alteration involves replacing the classification head with an nn.Identity() layer, ensuring that the
 ResNet50 solely functions as a feature extractor, generating rich feature representations devoid of
 any classification-specific bias.
-3
-
-Figure 1: Model Architecture
 Following the ResNet50 backbone, a transformative addition is made in the form of a transformer
 architecture, known for its proficiency in sequence modeling tasks, notably prevalent in natural
 language processing domains. In this context, transformers are adeptly repurposed to process the
@@ -179,6 +181,8 @@ the limitations of traditional CNN architectures and yielding heightened classif
 interpretability.This approach allows leveraging both the powerful feature extraction capabilities of
 convolutional neural networks (ResNet-50) and the attention mechanism of Transformer models for
 effective classification.
+
+
 5 EXPERIMENTS
 The below block diagram outlines the procedural pipeline for implementing the process.
 4
@@ -275,6 +279,8 @@ of true positive, true negative, false positive, and false negative predictions,
 can gain a deeper understanding of the model’s strengths and weaknesses. This analysis helps identify
 specific areas where the model may struggle to distinguish between different classes, guiding
 further improvements or adjustments.
+
+
 6 RESULTS
 Figure 4: Model Accuracy Comparison
 The ResNet50-Transformer model presents a compelling solution for cervical cancer diagnosis, as
@@ -308,6 +314,8 @@ model’s robustness for classifying cellular anomalies accurately. This robust 
 a suitable candidate for practical applications where precise identification of these anomalies is imperative,
 thereby contributing to advancements in healthcare diagnostics and ultimately improving
 patient outcomes.
+
+
 7 DISCUSSION
 The model’s performance demonstrates its efficacy in cervical cancer cell classification, achieving
 a commendable accuracy of 91% on the test dataset. Furthermore, the low loss value indicates the
@@ -321,6 +329,8 @@ advanced deep learning techniques, such as ResNet50 and transformer architecture
 cervical cancer screening and diagnosis, contributing to more effective healthcare solutions. However,
 to address the issues raised by long inference times and guarantee that the model is more widely
 accessible and scalable for practical uses, it is necessary to maximize computing efficiency.
+
+
 8 LIMITATIONS
 The ResNet50-Transformer model for cervical cancer diagnosis presents promising advancements
 in healthcare, yet several limitations must be addressed to maximize its impact. Foremost among
@@ -336,6 +346,8 @@ approval, validation studies, and integration into existing clinical workflows, 
 both time-consuming and resource-intensive. Addressing these limitations is essential to realizing
 the full potential of the ResNet50-Transformer model in improving healthcare outcomes and disease
 management strategies.
+
+
 9 FUTURE WORK & SIGNIFICANCE
 Early detection of cervical cancer greatly increases the likelihood of successful treatment and improved
 survival rates, underscoring the critical importance of reliable diagnostic tools in combating
@@ -366,38 +378,42 @@ with the potential to significantly enhance patient care and outcomes. By addres
 such as inference time and leveraging strategies for optimization and dataset expansion, the model
 can be further refined to deliver accurate, timely, and accessible diagnostic solutions, ultimately
 contributing to improved healthcare outcomes and disease management strategies.
+
+
 REFERENCES
+
 SIPAKMeD. URL https://www.cs.uoi.gr/˜marina/sipakmed.html.
+
 O. Attallah. Cercan·net: Cervical cancer classification model via multi-layer feature ensembles of
 lightweight cnns and transfer learning. Expert Syst. Appl., 229(PB), nov 2023. ISSN 0957-4174.
-doi: 10.1016/j.eswa.2023.120624. URL https://doi.org/10.1016/j.eswa.2023.
+do i: 10.1016/j.eswa.2023.120624. URL https://doi.org/10.1016/j.eswa.2023.
 120624.
-J. S. Mandelblatt, W. F. Lawrence, L. Gaffikin, K. K. Limpahayom, P. Lumbiganon, S. Warakamin,
-J. King, B. Yi, P. Ringers, and P. D. Blumenthal. Costs and Benefits of Different Strategies to
+
+J. S. Mandelblatt, W. F. Lawrence, L. Gaffikin, K. K. Limpahayom, P. Lumbiganon, S. Warakamin,J. King, B. Yi, P. Ringers, and P. D. Blumenthal. Costs and Benefits of Different Strategies to
 Screen for Cervical Cancer in Less-Developed Countries. JNCI: Journal of the National Cancer
 Institute, 94(19):1469–1483, 10 2002. ISSN 0027-8874. doi: 10.1093/jnci/94.19.1469. URL
 https://doi.org/10.1093/jnci/94.19.1469.
+
 I. Pacal and S. Kılıcarslan. Deep learning-based approaches for robust classification of cervical
 cancer. Neural Comput. Appl., 35(25):18813–18828, jul 2023. ISSN 0941-0643. doi: 10.1007/
 s00521-023-08757-w. URL https://doi.org/10.1007/s00521-023-08757-w.
+
 Y. R. Park, Y. J. Kim, W. Ju, K. H. Nam, S. Kim, and K. G. Kim. Comparison of machine and
 deep learning for the classification of cervical cancer based on cervicography images. Scientific
 reports, 11(1), 8 2021. doi: 10.1038/s41598-021-95748-3. URL https://doi.org/10.
 1038/s41598-021-95748-3.
+
 A. Tripathi, A. Arora, and A. Bhan. Classification of cervical cancer using deep learning algorithm.
 In 2021 5th International Conference on Intelligent Computing and Control Systems (ICICCS),
 pages 1210–1218, 2021. doi: 10.1109/ICICCS51141.2021.9432382.
-S.-Y.Wang, O.Wang, R. Zhang, A. Owens, and A. A. Efros. Cnn-generated images are surprisingly
-easy to spot... for now, 2020.
-WHO. Cervical cancer, 3 2024. URL https://www.who.int/news-room/
-fact-sheets/detail/cervical-cancer.
-9
 
-O. Yaman and T. Tuncer. Exemplar pyramid deep feature extraction based cervical cancer image
-classification model using pap-smear images. Biomedical Signal Processing and Control, 73:
-103428, 03 2022. doi: 10.1016/j.bspc.2021.103428.
-C. Zhao, R. Shuai, L. Ma, W. Liu, and M. Wu. Improving cervical cancer classification with
-imbalanced datasets combining taming transformers with T2T-ViT. Multimedia tools and applications,
-81(17):24265–24300, 3 2022. doi: 10.1007/s11042-022-12670-0. URL https:
-//doi.org/10.1007/s11042-022-12670-0.
-10
+
+S.-Y.Wang, O.Wang, R. Zhang, A. Owens, and A. A. Efros. Cnn-generated images are surprisingly
+easy to spot... for now, 2020. 
+
+WHO. Cervical cancer, 3 2024. URL https://www.who.int/news-room/
+fact-sheets/detail/cervical-cancer.9
+
+O. Yaman and T. Tuncer. Exemplar pyramid deep feature extraction based cervical cancer imageclassification model using pap-smear images. Biomedical Signal Processing and Control, 73:103428, 03 2022. doi: 10.1016/j.bspc.2021.103428.
+
+C. Zhao, R. Shuai, L. Ma, W. Liu, and M. Wu. Improving cervical cancer classification with imbalanced datasets combining taming transformers with T2T-ViT. Multimedia tools and applications, 81(17):24265–24300, 3 2022. doi: 10.1007/s11042-022-12670-0. URL https: //doi.org/10.1007/s11042-022-12670-0.10
